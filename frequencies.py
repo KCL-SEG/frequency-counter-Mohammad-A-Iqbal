@@ -5,7 +5,7 @@ def frequencies(items):
     frequencies = {}
     # Your code goes here
     for i in items:
-        item = str(items[i])
+        item = str(items[int(i)])
         if item in frequencies:
             frequencies[item] = frequencies.get(item) + 1
         else:
