@@ -4,6 +4,7 @@
 def frequencies(items):
     frequencies = {}
     # Your code goes here
-    for i in range(len(items)):
-            frequencies[items[i]] = frequencies[items[i]] + 1
+    for i in items:
+        item = str(items[i])
+        frequencies[item] = frequencies[item] + 1
     return frequencies
