@@ -4,4 +4,9 @@
 def frequencies(items):
     frequencies = {}
     # Your code goes here
+    for i in items:
+        if items[i] in frequencies:
+            frequencies[items[i]] = frequencies[items[i]] + 1
+        else:
+            frequencies.update({items[i]: 1})
     return frequencies
