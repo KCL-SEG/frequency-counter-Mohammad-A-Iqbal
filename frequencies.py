@@ -6,5 +6,8 @@ def frequencies(items):
     # Your code goes here
     for i in items:
         item = str(items[i])
-        frequencies[item] = frequencies[item] + 1
+        if item in frequencies:
+            frequencies[item] = frequencies.get(item) + 1
+        else:
+            frequencies.update({item: 1}) 
     return frequencies
